@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organizations>
+	<organization>
+		<name>CognizantIT</name>
+		<clientId>3dfce74f-a925-438c-b8a6-f7e4521d5c2a</clientId>
+		<redirectUri>http://localhost:8080/genesysContactCenter/callback</redirectUri>
+	</organization>
+	
+	<organization>
+		<name>DisfrutaGlobal0091US1</name>
+		<clientId>6158f32f-872a-47b9-814f-48a0f35b3fc2</clientId>
+		<redirectUri>http://localhost:8080/genesysContactCenter/callback</redirectUri>
+	</organization>
+	
+	<organization>
+		<name>cognizant-merck</name>
+		<clientId>3b23cbbf-6ba7-46ac-972d-cabd80fb2340</clientId>
+		<redirectUri>http://localhost:8080/genesysContactCenter/callback</redirectUri>
+	</organization>
+	<organization>
+		<name>cognizantCommunicate</name>
+		<clientId>8712af2c-1286-4d2b-a930-3aefc0ff0948</clientId>
+		<redirectUri>http://localhost:8080/genesysContactCenter/callback</redirectUri>
+	</organization>
+
+</organizations>

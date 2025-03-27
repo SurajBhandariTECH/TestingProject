@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logging out...</title>
+    
+    <Script defer>
+    window.onload = function(){
+    	let genesysLogoutUrl = "[[${genesysLogoutUrl}]]";
+    	let appRedirecturl = "[[${redirectAfterLogout}]]";
+    	
+    	console.log(genesysLogoutUrl);
+    	console.log(appRedirecturl);
+    	
+    	
+    	window.location.href = "http://localhost:8080/genesysContactCenter/login";
+    	
+
+		console.log("opeing genesys logout page");
+    	window.open(genesysLogoutUrl,"_blank");
+    	
+    	
+    	
+    	
+    };
+    </Script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+	<h1>Logging you out...</h1>
+	<p>you are not redirected automatically,Please <a href="http://localhost:8080/genesysContactCenter/login">click here</a>
+</body>
+</html>

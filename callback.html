@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Callback</title>
+	<script>
+		window.onload =function(){
+			//Extreact tge access token from the URL fragment
+			const hash = window.location.hash.substring(1);
+			const params = new URLSearchParams(hash);
+			const accessToken = params.get("access_token");
+			
+			if(accessToken){
+				// redirect to the server side handler with the access token
+				const targetUrl = `/genesysContactCenter/callbackServer?access_token=${encodeURIComponent(accessToken)}`;
+				window.location.replace(targetUrl);
+			}
+			else{
+				//handle error if token is not present
+				document.body.innerHTML = "<H1>Authorization failed: No access token recieved</H1>";
+			}
+		};
+	</script>
+</head>
+<body>
+	<h1>Processing Authorization...</h1>
+</body>
+</html>
